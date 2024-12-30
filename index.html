@@ -5,18 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Code Solutions Hub</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>Code Solutions Hub</h1>
     <p>Share and explore solutions to coding problems!</p>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#" id="home-link">Home</a></li>
+        <li><a href="#" id="solutions-link">Solutions</a></li>
+        <li><button id="theme-toggle">🌙 Dark Mode</button></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <!-- Form to Add Code Solutions -->
+  <!-- Home Section -->
+  <main id="home-section" class="section">
     <section id="add-solution">
       <h2>Add a Solution</h2>
       <form id="solution-form">
+        <label for="user-name">Your Name:</label>
+        <input type="text" id="user-name" placeholder="Enter your name" required>
+
         <label for="problem-title">Problem Title:</label>
         <input type="text" id="problem-title" placeholder="Enter problem title" required>
 
@@ -29,10 +41,12 @@
         <button type="submit">Post Solution</button>
       </form>
     </section>
+  </main>
 
-    <!-- Section to Display Posted Solutions -->
+  <!-- Solutions Section -->
+  <main id="solutions-section" class="section hidden">
     <section id="solutions-list">
-      <h2>Solutions</h2>
+      <h2>All Solutions</h2>
       <!-- Solutions will be dynamically added here -->
     </section>
   </main>
