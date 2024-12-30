@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Solutions Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Code Solutions Hub</h1>
+    <p>Share and explore solutions to coding problems!</p>
+  </header>
+
+  <main>
+    <!-- Form to Add Code Solutions -->
+    <section id="add-solution">
+      <h2>Add a Solution</h2>
+      <form id="solution-form">
+        <label for="problem-title">Problem Title:</label>
+        <input type="text" id="problem-title" placeholder="Enter problem title" required>
+
+        <label for="language">Programming Language:</label>
+        <input type="text" id="language" placeholder="e.g., Python, JavaScript" required>
+
+        <label for="code-solution">Code Solution:</label>
+        <textarea id="code-solution" placeholder="Paste your code here..." rows="8" required></textarea>
+
+        <button type="submit">Post Solution</button>
+      </form>
+    </section>
+
+    <!-- Section to Display Posted Solutions -->
+    <section id="solutions-list">
+      <h2>Solutions</h2>
+      <!-- Solutions will be dynamically added here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Code Solutions Hub | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
